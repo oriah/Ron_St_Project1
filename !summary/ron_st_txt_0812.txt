@@ -1,0 +1,364 @@
+FULL STACK DEVELOPER "Languages"
+ 
+C# - שפת שרתים
+JS - "שפת דפדפן"
+HTML - עיצוב דפי האתר
+Angular - שפה מתקדמת של אתרים
+SQL - שפת תקשורת אל בסיסי נתונים ששומר את המידע של האתר
+CSS -  שפת גרפיקה לאתרים
+
++
+
+Site Hosting  אירוח/ניהול אתרים
+
+---------------
+C++
+C
+-----
+Assembly
+
+
+
+We write code in C# ->  We compile (ctrl+shift+b in visual studio) -> we get '.exe' file that runs in windows
+
+
+
+Development Environents  סביבות עבודה / פיתוח
+
+Visual Studio 2019 + Resharper   סביבה לשרתים / בק אנד
+Visual Studio Code   סביבה לצד קליינט/פרונט אנד
+MySQL + Workbench - סביבה לבסיסי נתונים MY SQL
+SQL Server Management Studio 2019 - סביבה לבסיסי נתונים MSSQL
+Chrome Developer Tools   google chrome -> f12    
+סביבת בדיקות לאתרי אינטרנט של כרום
+
+
+
+Code Repositories  / Version Control     שמירת קוד באינטרנט
+
+GitHUB
+TFS
+
+
+Learn Sites
+
+W3Schools
+MDN   אתר ללימוד קליינט
+Linked In Learning
+Plural Sight
+
+
+
+
+להוריד בבית 
+Visual Studio 2019 + Resharper   סביבה לשרתים / בק אנד
+Visual Studio Code   סביבה לצד קליינט/פרונט אנד
+MySQL + Workbench - סביבה לבסיסי נתונים MY SQL
+SQL Server Management Studio 2019 - סביבה לבסיסי נתונים MSSQL
+NPM
+Git CLI
+NG CLI
+
+
+
+דוגמאות לאתרים אמיתיים
+
+
+https://www.yad2.co.il/
+https://my.yad2.co.il/newOrder/index.php
+
+SERVER
+php
+
+CLIENT
+html+css+js
+
+DB
+mysql
+
+
+
+https://www.bankhapoalim.co.il/he
+
+SERVER
+C#
+
+Client
+html+css+js+angular
+
+DB
+mssql
+
+
+
+
+https://www.yellow.co.il/
+
+
+
+
+https://www.amazon.com/
+
+
+
+
+סוגי פלטפורמות תכנות
+
+Web Site   אתר אינטרנט  ********
+Desktop App    אפליקציה שולחנית
+-> Forms App   אפליקציית חלונות
+-> Console App (CLI)   אפליקציית שורת-פקודה  
+Windows Service    שירות רקע
+Mobile App    אפליקצית מובייל
+
+
+CLI = Command Line Interface
+
+DOS= Disk Operating System
+
+
+Web Site Techologies
+
+Microsoft    ******
+Oracle- my sql 
+Apple
+Amazon
+Facebook
+Twitter
+Samsung
+
+
+
+
+Full Stack Developer
+
+SERVER + CLIENT + DB + SITE MANAGEMENT
+
+
+ASP.NET CORE 3.2   שרת 
+ANGULAR 8   משתמש
+MYSQL   בסיס נתונים
+
+
+
+
+Visual Studio Project Hierarchy
+
+Solution
+->  Project
+    -> File
+
+
+
+
+
+Web Site "Levels"
+
+1 CLIENT Only  אתר תדמית
+ספר, אתר ראווה של מוצרי חברה
+
+2 CLIENT + SERVER
+
+3 CLIENT + SERVER + DB    ********
+בנק הפועלים יילו אמזון
+
+
+
+
+
+Microsoft Programming
+
+Web Sites  -  ASP.NET
+Desktop Apps - Windows Forms .NET
+(Mobile Apps)
+Windows Services - Windows Service
+
+
+Framework -  .NET
+Language -   C#
+Development Environment (IDE) -  Visual Studio
+
+
+.NET
+------
+BCL + CLR
+
+BCL = Base Class Library -  base classes
+CLR = Common Language Runtime  - compiler
+
+
+ASP = Active Server Pages
+
+
+Non-Real-Time Programming   C#  PHP NODE.JS  Phyton   *****
+Near Real-Time Programming  
+Real-Time Programming   Assembler C
+
+
+--------------------------
+
+C#
+
+variables    משתנים  VVVVV
+conditionals   התניות    if, switch..case    VVVVV
+loops  לולאות  for, while, do..while    VVVVV
+arrays   מערכים
+class   מחלקות
+  fields   שדות
+  properties   מאפיינים
+  constructors   בנאים
+  methods  פעולות/מתודות
+
+
+
+RAM .VS.  HDD
+Transience .vs. Persistence
+ארעי  VS  קבוע
+
+
+
+variable types
+
+string    מחרוזת
+int   מספר שלם
+decimal   שבר של מספר  (פיננסי)
+double   שבר של מספר (מדעי)
+boolean   כן/לא
+1= true כן
+0= false לא
+char   תו בודד    
+'a'  's'
+DateTime   תאריך ושעה
+TimeSpan  משך זמן
+
+
+I-P-O
+input-processing-output
+
+
+syntactic sugar
+
+
+CPU= central-processing-unit
+
+
+
+P/Invoke  direct access to underlying libraries (.dlls) etc.
+P/Invoke = Platform Invocation Services
+
+
+
+Java Script::::
+
+variables    משתנים  VVVVV
+conditionals   התניות    if, switch..case    VVVVV
+loops  לולאות  for, while, do..while    VVVVV
+arrays   מערכים
+
+
+variable types
+
+string    מחרוזת
+int   מספר שלם
+decimal   שבר של מספר  (פיננסי)
+double   שבר של מספר (מדעי)
+boolean   כן/לא
+1= true כן
+0= false לא
+char   תו בודד    
+'a'  's'
+DateTime   תאריך ושעה
+TimeSpan  משך זמן
+
+
+
+Node.JS - js server side
+HTML - js client side
+
+
+HTML
+-----------
+inline java script  (in <script> tag)    XXXXXX
+standalone java script file (extenal .js file that is linked to our .html file- and located in the same directory).
+
+css - same thing
+inline css (in <style> tag)    XXXXXX
+standalone css file (extenal .js file that is linked to our .html file- and located in the same directory).
+
+
+CSS = Canscading Style Sheets    מסמכי עיצוב
+
+only inside HTML (only client side) !!!
+
+HTML = HyperText Markup Language
+
+
+
+a= anchor tag
+
+
+http://localhost:62742/
+[Scheme]://host_name:port/relative_path
+http/https
+
+https://www.facebook.com:443
+
+http default port = 80
+https default port = 443
+
+
+
+server side (back end):
+http://localhost:62742/Home/Congrat/?name=ron
+client side (front end):
+http://localhost:10202/index.html
+
+
+
+HTTP Request Example  (from chrome debugging tools)::::
+
+Request URL: http://localhost:62742/Home/Congrat/?name=oriahdout
+Request Method: GET
+Status Code: 200 OK
+Remote Address: [::1]:62742
+Referrer Policy: no-referrer-when-downgrade
+Cache-Control: private
+Content-Length: 16
+Content-Type: text/html; charset=utf-8
+Date: Wed, 12 Aug 2020 16:21:41 GMT
+Server: Microsoft-IIS/10.0
+X-AspNet-Version: 4.0.30319
+X-AspNetMvc-Version: 5.2
+X-Powered-By: ASP.NET
+X-SourceFiles: =?UTF-8?B?ZDpcV29ya0RyaXZlXFByb2plY3RzXENsaWVudHNcUm9uX1Byb2plY3QxXFRlbXBcV2ViQXBwbGljYXRpb24xXEhvbWVcQ29uZ3JhdFw=?=
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate, br
+Accept-Language: he,he-IL;q=0.9,en-US;q=0.8,en;q=0.7
+Cache-Control: max-age=0
+Connection: keep-alive
+Cookie: __atuvc=1%7C35
+Host: localhost:62742
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: none
+Sec-Fetch-User: ?1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36   -> headers
+[empty line]
+name: oriahdout  ->  body
+
+
+
+https://www.tutorialspoint.com/http/index.htm
+
+
+
+GET /hello.htm HTTP/1.1  -> request line
+User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+Host: www.tutorialspoint.com
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+Connection: Keep-Alive  -> headers
+[empty line]
+name: oriahdout  ->  body
+
