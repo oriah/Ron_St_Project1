@@ -1,0 +1,48 @@
+﻿<html>
+
+<head>
+    <style></style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script>
+
+        function getURL(url) {
+            return $.ajax({
+                type: "GET",
+                url: url,
+                cache: false,
+                async: false
+            }).responseText;
+        }
+
+
+        function myFirstMethod() {
+
+            var server = "http://localhost:62742/Home/Congrat/?name=";
+            var name = $('#name').val();
+            var msg = getURL(server + name);
+            alert(msg);
+            //var x = $.get(server).responseText;
+            //$.get(server, { 'colors[]': ["Red", "Green", "Blue"] });
+        }
+    </script>
+</head>
+
+<body>
+    <h2>PAGE TITLE</h2>
+    <a href="https://www.facebook.com/">
+        <img src="https://www.designer-daily.com/wp-content/uploads/2010/10/my-name-is-Orman.jpg" /> click here to enter face book
+    </a>
+
+
+    <div></div>
+    <label>Enter your name :</label>
+    <input id="name" />
+    <button onclick="myFirstMethod()">reach server !</button>
+
+
+    <!-- Bottom Script -->
+    <script>
+    </script>
+</body>
+
+</html>

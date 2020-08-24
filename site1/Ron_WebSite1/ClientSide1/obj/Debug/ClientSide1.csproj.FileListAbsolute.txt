@@ -1,0 +1,7 @@
+d:\WorkDrive\Projects\Clients\Ron_Project1\Temp\site1\Ron_WebSite1\ClientSide1\bin\TypeScriptHTMLApp1.dll.config
+d:\WorkDrive\Projects\Clients\Ron_Project1\Temp\site1\Ron_WebSite1\ClientSide1\bin\TypeScriptHTMLApp1.dll
+d:\WorkDrive\Projects\Clients\Ron_Project1\Temp\site1\Ron_WebSite1\ClientSide1\bin\TypeScriptHTMLApp1.pdb
+d:\WorkDrive\Projects\Clients\Ron_Project1\Temp\site1\Ron_WebSite1\ClientSide1\obj\Debug\ClientSide1.csprojAssemblyReference.cache
+d:\WorkDrive\Projects\Clients\Ron_Project1\Temp\site1\Ron_WebSite1\ClientSide1\obj\Debug\ClientSide1.csproj.CoreCompileInputs.cache
+d:\WorkDrive\Projects\Clients\Ron_Project1\Temp\site1\Ron_WebSite1\ClientSide1\obj\Debug\TypeScriptHTMLApp1.dll
+d:\WorkDrive\Projects\Clients\Ron_Project1\Temp\site1\Ron_WebSite1\ClientSide1\obj\Debug\TypeScriptHTMLApp1.pdb
