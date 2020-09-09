@@ -40,6 +40,8 @@ namespace Chat.Winforms
       StartChat();
     }
 
+השיחה נותקה
+
     private void StartChat()
     {
       tbxNewMessage.Enabled = true;

@@ -5,12 +5,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/script1.js"></script>
     <style>
+        /*        body {
+                    direction: rtl;
+                }
+        */
         div {
             margin-bottom: 20px
         }
 
         textarea {
             display: block
+        }
+
+        label#lblStatus {
+            color: red;
+            display: block;
+        }
+
+        label#lblStatus2 {
+            color: green;
+            font-weight: bold;
+            margin-left: 10px;
         }
     </style>
     <script>
@@ -20,10 +35,28 @@
 
             var isLoginOK = LogInToServer();
             if (!isLoginOK) {
-                alert('wrong user name and/or password !');
+                //alert('wrong user name and/or password !');
+                debugger;
+                $('#lblStatus')[0].innerHTML = 'wrong user name and/or password !';
+                $('#lblStatus2')[0].innerHTML = '';
                 return;
-            }
+            } else {
+                $('#lblStatus')[0].innerHTML = '';
+                var iterations = 0;
+                var timerId = setInterval(function () {
 
+                    //debugger;
+                    $('#lblStatus2')[0].innerHTML = 'You\'re Connected!!';
+                    setTimeout(function () {
+
+                        $('#lblStatus2')[0].innerHTML = '';
+
+                        iterations++;
+                        if (iterations >= 3)
+                            clearInterval(timerId);
+                    }, 500);
+                }, 700);
+            }
 
             //enable back the new message controls
             $btn = document.getElementById('tbxNewMessage');
@@ -31,7 +64,8 @@
             $btn.disabled = false;
             $tbx.disabled = false;
 
-
+            //starts listening to messages.
+            setInterval(readMessagesOne, 3000);
 
 
 
@@ -101,6 +135,67 @@
 
         }
 
+
+
+        function readMessagesOne(username)     //periodic check for new messages
+        {
+            var username = $('#username').val();
+            var res = $.ajax({
+                method: 'POST',
+                url: server + `/home/read`,
+                async: false,
+                data:
+                {
+                    userName: username
+                },
+                //context: document.body,
+                success: function (data) {
+
+                    if (data.length == 0)
+                        return;
+
+                    //var strData = JSON.stringify(data);
+                    //alert(strData);
+                    //debugger;
+                    $('#tbxChat').val($('#tbxChat').val() + data[0].UserName + ": " + data[0].Message + '\r\n');
+                    //alert(data);
+                    //$(this).addClass("done");
+                }
+            }).responseText;
+        }
+
+        function sendMessage(data) {
+
+            var username = $('#username').val();
+            var msg = $('#tbxNewMessage').val();
+            debugger;
+
+            //sends to server (async)
+            var res = $.ajax({
+                method: 'POST',
+                url: server + `/home/send`,
+                async: false,
+                data:
+                {
+                    userName: username,
+                    toUserName: (username == 'oria' ? 'ronf' : 'oria'),
+                    message: msg
+                },
+                //context: document.body,
+                success: function (data) {
+
+                    //alert(data);
+                    //$(this).addClass("done");
+                }
+            }).responseText;
+
+            //appends to own chat textbox
+            $('#tbxChat').val($('#tbxChat').val() + username + ": " + msg + '\r\n');
+
+            //clears new message box
+            $('#tbxNewMessage').val('');
+        }
+
     </script>
 
     <title>Ron Soccer Chat</title>
@@ -119,22 +214,24 @@
 
             <div>
                 <label>Password</label>
-                <input id="password" name="password" />
+                <input type="password" id="password" name="password" />
             </div>
+            <label id="lblStatus"></label>
             <input type="button" value="Connect" onclick="onConnect()" />
+            <label id="lblStatus2"></label>
         </div>
 
 
         <div>
             <label>New Message</label>
-            <input id="tbxNewMessage" name="name" size="60" disabled="disabled" />
-            <button id="btnNewMessage" disabled="disabled">Send</button>
+            <input id="tbxNewMessage" disabled="disabled" name="name" size="60" />
+            <button type="button" disabled="disabled" id="btnNewMessage" onclick="sendMessage(this)">Send</button>
         </div>
 
 
         <div>
             <label>Chat</label>
-            <textarea name="name" rows="5" cols="60"></textarea>
+            <textarea id="tbxChat" name="name" rows="5" cols="60"></textarea>
         </div>
 
     </form>
