@@ -1,0 +1,7 @@
+D:\WorkDrive\Projects\Clients\Ron_Project1\Temp\Emule.Web.Client\bin\TypeScriptHTMLApp1.dll.config
+D:\WorkDrive\Projects\Clients\Ron_Project1\Temp\Emule.Web.Client\bin\TypeScriptHTMLApp1.dll
+D:\WorkDrive\Projects\Clients\Ron_Project1\Temp\Emule.Web.Client\bin\TypeScriptHTMLApp1.pdb
+D:\WorkDrive\Projects\Clients\Ron_Project1\Temp\Emule.Web.Client\obj\Debug\Emule.Web.Client.csprojAssemblyReference.cache
+D:\WorkDrive\Projects\Clients\Ron_Project1\Temp\Emule.Web.Client\obj\Debug\Emule.Web.Client.csproj.CoreCompileInputs.cache
+D:\WorkDrive\Projects\Clients\Ron_Project1\Temp\Emule.Web.Client\obj\Debug\TypeScriptHTMLApp1.dll
+D:\WorkDrive\Projects\Clients\Ron_Project1\Temp\Emule.Web.Client\obj\Debug\TypeScriptHTMLApp1.pdb
