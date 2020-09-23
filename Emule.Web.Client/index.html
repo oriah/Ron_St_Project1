@@ -5,32 +5,20 @@
     <meta charset="utf-8" />
     <title>Ron's Emule Web App</title>
     <link rel="stylesheet" href="app.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="app.js"></script>
 </head>
 <body>
-    <form action="http://ron1.ori-pc.com/api/testcalc" method="get">
+    <!--<form action="http://ron1.ori-pc.com/api/testfile" method="post" enctype="multipart/form-data">-->
+
+    <form>
 
         <h1>Ron's Emule Web App</h1>
 
         <div id="content">
-            <fieldset>
-                <label>num1</label>
-                <input name="num1" value="" />
-            </fieldset>
+            <input type="file" id="file" name="file" value="" />
 
-            <fieldset>
-                <label>num2</label>
-                <input name="num2" value="" />
-            </fieldset>
-
-            <fieldset>
-                <label>num3</label>
-                <input name="num3" value="" />
-            </fieldset>
-
-            <input type="submit" name="name" value="Calc" />
-            <input type="reset" name="name" value="Reset" />
-
+            <input type="button" value="Save" onclick="saveFile()" />
         </div>
 
     </form>

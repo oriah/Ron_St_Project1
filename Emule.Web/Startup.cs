@@ -30,7 +30,12 @@ namespace Emule.Web
         options.MinimumSameSitePolicy = SameSiteMode.None;
       });
 
-
+      services.AddCors(o => o.AddPolicy("MyPolicy", builder =>    //dev: allow CORS
+      {
+        builder.AllowAnyOrigin()
+          .AllowAnyMethod()
+          .AllowAnyHeader();
+      }));
       services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
     }
 
@@ -39,6 +44,7 @@ namespace Emule.Web
     {
       if (env.IsDevelopment())
       {
+        app.UseCors("MyPolicy");
         app.UseDeveloperExceptionPage();
       }
       else

@@ -30,7 +30,7 @@
     "IIS": {
       "commandName": "IIS",
       "environmentVariables": {
-        "Environment": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
   }
